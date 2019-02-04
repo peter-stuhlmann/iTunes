@@ -4,9 +4,15 @@ const trackList = music.map(track => {
     const collectionName = track.collectionName
     const trackName = track.trackName
     const artistName = track.artistName
+    let trackPrice = track.trackPrice
+    let currency = track.currency
+
+    if (trackPrice == `-1`) {
+        trackPrice = "Album only"
+        currency = ""
+    }
+
     const releaseDate = track.releaseDate.slice(0, 10)
-    const trackPrice = track.trackPrice
-    const currency = track.currency
     return `
       <tr>
         <td>${index}</td>
