@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,30 @@
 </head>
 
 <body>
-    <h1>Songs</h1>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>name</th>
-                <th>artist</th>
-                <th>album</th>
-                <th>price</th>
-                <th>release date</th>
-            </tr>
-        </thead>
-        <tbody class="tracklist"></tbody>
-    </table>
+    <main>
+        <h1>Songs</h1>
+        <table>
+            <colgroup>
+                <col width="30">
+                <col width="250">
+                <col width="250">
+                <col width="120">
+                <col width="150">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>name</th>
+                    <th>artist</th>
+                    <th>price</th>
+                    <th>release date</th>
+                </tr>
+            </thead>
+            <tbody class="tracklist"></tbody>
+        </table>
+    </main>
     <script src="./assets/music.js"></script>
     <script src="./assets/main.js"></script>
 </body>
+
 </html>
