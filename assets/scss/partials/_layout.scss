@@ -1,0 +1,76 @@
+body {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    font-family: $primaryFont
+}
+
+main {
+    width: 100%;
+    max-width: $desktop;
+    margin: 30px auto
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 100;
+    
+    &::after {
+        content: url(../img/powered.png);
+        vertical-align: 14px
+    }
+}
+
+.nowrap {
+    white-space: nowrap
+}
+
+table {
+    text-align: left;
+    vertical-align: middle;
+
+    thead {
+
+        &:after {
+            line-height: 1.3em;
+            content: "\200C";
+            display: block;
+        }
+
+        th {
+            color: $tertiaryColor;
+            font-weight: 100;
+            border-top: 1px solid rgba(165, 165, 165, 0.2);
+            border-bottom: 1px solid rgba(165, 165, 165, 0.2);
+            padding: 5px 0;
+            text-transform: uppercase
+        }
+    }
+
+    td {
+        border-bottom: 1px solid rgba(165, 165, 165, 0.2);
+
+        &:first-child {
+            color: $tertiaryColor
+        }
+
+        img {
+            margin-right: 11px;
+            vertical-align: middle;
+            padding: 2px 0
+        }
+    }
+
+    button {
+        border: 0;
+        background: none;
+        color: rgba(165, 165, 165, 0.3);
+        font-size: 1.2em;
+        padding: 2px;
+        outline: none;
+        transition: 0.3s;
+
+        &:hover {
+            color: rgba(165, 165, 165, 0.6)
+        }
+    }
+}

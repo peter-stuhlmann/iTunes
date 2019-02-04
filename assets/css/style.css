@@ -1,2 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  background-color: #272625;
+  color: #fff;
+  font-family: "Open Sans", sans-serif; }
+
+main {
+  width: 100%;
+  max-width: 925px;
+  margin: 30px auto; }
+
+h1 {
+  font-size: 2.8em;
+  font-weight: 100; }
+  h1::after {
+    content: url(../img/powered.png);
+    vertical-align: 14px; }
+
+.nowrap {
+  white-space: nowrap; }
+
+table {
+  text-align: left;
+  vertical-align: middle; }
+  table thead:after {
+    line-height: 1.3em;
+    content: "\200C";
+    display: block; }
+  table thead th {
+    color: #A6A5A5;
+    font-weight: 100;
+    border-top: 1px solid rgba(165, 165, 165, 0.2);
+    border-bottom: 1px solid rgba(165, 165, 165, 0.2);
+    padding: 5px 0;
+    text-transform: uppercase; }
+  table td {
+    border-bottom: 1px solid rgba(165, 165, 165, 0.2); }
+    table td:first-child {
+      color: #A6A5A5; }
+    table td img {
+      margin-right: 11px;
+      vertical-align: middle;
+      padding: 2px 0; }
+  table button {
+    border: 0;
+    background: none;
+    color: rgba(165, 165, 165, 0.3);
+    font-size: 1.2em;
+    padding: 2px;
+    outline: none;
+    transition: 0.3s; }
+    table button:hover {
+      color: rgba(165, 165, 165, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
