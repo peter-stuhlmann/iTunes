@@ -1,4 +1,4 @@
-# The Sounds of Silence 
+# The Sound of Silence 
 
 Create based on the data in music.js (already accessible through the `music` `const`) a preview page for this search result.
 
