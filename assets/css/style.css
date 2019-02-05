@@ -24,20 +24,17 @@ h1 {
   padding: 5px 10px;
   background-color: #A6A5A5;
   border: none;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px;
   outline: none; }
   #filter-input::placeholder {
     color: #fff; }
 
-#filter-button {
+label {
   float: right;
-  padding: 5px 10px;
+  padding: 0 10px;
   border: none;
-  border-radius: 0 4px 4px 0;
   outline: none;
   transition: 0.3s; }
-  #filter-button:hover {
-    background-color: #fff; }
 
 table {
   text-align: left;

@@ -18,7 +18,7 @@ const trackList = music.map(track => {
     }
 
     const releaseDate = track.releaseDate.slice(0, 10)
-    
+
     return `
       <tr>
         <td>${index}</td>
@@ -34,19 +34,5 @@ const trackList = music.map(track => {
         <td>${trackPrice}&nbsp;${currency}</td>
       </tr>`
 })
-
-
-function SoS_Play(index) {
-    let resetAllPlayers = document.querySelectorAll(`.audioplayer`);
-    let player = document.querySelector(`#player${index}`);
-    let button = document.querySelector(`#play${index}`).style.color = "rgb(165, 165, 165)";
-    player.play();
-}
-
-function SoS_Pause(index) {
-    let player = document.querySelector(`#player${index}`);
-    let button = document.querySelector(`#play${index}`).style.color = "";
-    player.pause();
-}
 
 document.querySelector('.tracklist').innerHTML = trackList.join("")
