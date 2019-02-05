@@ -25,7 +25,7 @@ const trackList = music.map(track => {
         <td>
             <button id="play${index}" onclick="SoS_Play(${index})"><i class="fas fa-play"></i></button>
             <button id="pause${index}" onclick="SoS_Pause(${index})"><i class="fas fa-pause"></i></button>
-            <audio id="player${index}" class="audioplayer" autoplay loop><source src="${preview}"></audio>
+            <audio id="player${index}" class="audioplayer" loop><source src="${preview}"></audio>
         </td>
         <td><img alt="${collectionName}" title="${collectionName}" src="${artworkUrl30}"></td>
         <td>${trackName}</td>
