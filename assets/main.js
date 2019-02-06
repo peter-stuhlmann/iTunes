@@ -77,7 +77,7 @@ filterInput.onkeypress = function (e) {
 
 
 
-// sort table (found at https://wiki.selfhtml.org/wiki/JavaScript/Tutorials/Table_Dynamic_sort)
+// sort table (found at https://codepen.io/andrese52/pen/ZJENqp)
 
 function sortTable(n) {
   var table,
