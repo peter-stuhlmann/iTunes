@@ -22,7 +22,7 @@ h1 {
 #filter-input {
   float: right;
   padding: 5px 10px;
-  background-color: #A6A5A5;
+  background-color: rgba(166, 165, 165, 0.3);
   border: none;
   border-radius: 4px;
   outline: none; }
