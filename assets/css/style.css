@@ -38,7 +38,8 @@ label {
 
 table {
   text-align: left;
-  vertical-align: middle; }
+  vertical-align: middle;
+  border-collapse: collapse; }
   table thead:after {
     line-height: 1.3em;
     content: "\200C";
