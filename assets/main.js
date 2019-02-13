@@ -69,7 +69,7 @@ renderTracks()
 
 const filterInput = document.querySelector("#filter-input")
 
-filterInput.onkeypress = function (e) {
+filterInput.onkeyup = function (e) {
     renderTracks(filterInput.value)
 }
 
