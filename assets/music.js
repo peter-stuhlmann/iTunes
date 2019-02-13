@@ -629,28 +629,6 @@ const music = [
         "isStreamable": true
     },
     {
-        "wrapperType": "audiobook",
-        "artistId": 123743544,
-        "collectionId": 404823019,
-        "artistName": "John Daido Loori Roshi",
-        "collectionName": "Awakening to Stillness: Caoshan's Bell Sound",
-        "collectionCensoredName": "Awakening to Stillness: Caoshan's Bell Sound",
-        "artistViewUrl": "https://itunes.apple.com/us/author/john-daido-loori-roshi/id123743544?mt=3&uo=4",
-        "collectionViewUrl": "https://itunes.apple.com/us/audiobook/awakening-to-stillness-caoshans-bell-sound/id404823019?uo=4",
-        "artworkUrl60": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/ff/cd/b4/ffcdb46a-24f3-15ba-960a-1c2dc78dea39/source/60x60bb.jpg",
-        "artworkUrl100": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/ff/cd/b4/ffcdb46a-24f3-15ba-960a-1c2dc78dea39/source/100x100bb.jpg",
-        "collectionPrice": 1.99,
-        "collectionExplicitness": "notExplicit",
-        "trackCount": 1,
-        "copyright": "℗ © 2006 Dharma Communications",
-        "country": "USA",
-        "currency": "USD",
-        "releaseDate": "2006-01-01T08:00:00Z",
-        "primaryGenreName": "Nonfiction",
-        "previewUrl": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music7/v4/41/27/6d/41276d8f-70ef-1452-e57e-10665737a303/mzaf_5565274540960214209.plus.aac.p.m4a",
-        "description": "Human beings spend most of their time talking to themselves. Constantly preoccupied with the past and the future, we live in a perpetual state of distraction and mental turmoil. But what happens when our internal chatter quiets down? Daido Roshi discusses our minds' capability to experience profound stillness, and the heart of Zen practice is to find this still point within ourselves. This still point is as natural as blinking our eyes or drinking a cup of coffee, and it's possible to access it by meditation. As we develop our powers of concentration, we learn how to experience this still point even in the everyday activities of our lives. This shift of consciousness changes our lives completely because it allows us to experience life directly rather than just thinking about it.<br /><br />Zen Buddhism emphasizes zazen, or seated meditation, as the means to study the self and understand who we truly are. Dharma talks are an essential aspect of Zen training and take place in the context of zazen. Said to be \"dark to the mind and radiant to the heart\", a dharma talk is one of the ways in which a teacher points directly to the heart of the teachings of the Buddha. In our meditation practice, it is easy to get lost in self-doubt, fantasy, numbness, and emotional agitation. Dharma talks help to ground our practice, providing inspiration and an essential recognition of exactly where we find ourselves, so that we can learn to face difficulties and obstacles with a free and flexible mind. This talk was given at Zen Mountain Monastery or the Zen Center of New York City of the Mountains and Rivers Order of Zen Buddhism, founded in 1980 by the late American Zen Master John Daido Loori, Roshi (1931-2009)."
-    },
-    {
         "wrapperType": "track",
         "kind": "song",
         "artistId": 156807,
