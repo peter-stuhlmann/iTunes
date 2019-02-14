@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modern Talking</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <input type="text" id="filter-input" placeholder="Enter an artist ...">
+        <label>Filter: </label>
+
+        <h1>Songs 'Lord of the Rings'</h1>
+
+        <table>
+            <colgroup>
+                <col width="50">
+                <col width="100">
+                <col width="35">
+                <col width="290">
+                <col width="235">
+                <col width="150">
+                <col width="95">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2" onclick="sortTable(3)">name&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                    <th onclick="sortTable(4)">artist&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                    <th onclick="sortTable(5)">release date&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                    <th onclick="sortTable(6)">price&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                </tr>
+            </thead>
+            <tbody class="tracklist"></tbody>
+        </table>
+    </main>
+    <script src="./assets/js/music-lordoftherings.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
