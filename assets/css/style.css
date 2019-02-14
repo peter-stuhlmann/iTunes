@@ -70,4 +70,31 @@ table {
     table button:hover {
       color: rgba(165, 165, 165, 0.6); }
 
+.categories {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .categories .cat-flex-items {
+    flex: 0 0 19%;
+    margin: 10px 0;
+    text-align: center;
+    background-size: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.3s; }
+    .categories .cat-flex-items:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
+    .categories .cat-flex-items > a {
+      color: #fff;
+      text-decoration: none; }
+    .categories .cat-flex-items span {
+      position: absolute;
+      top: 50%;
+      left: 10px; }
+    .categories .cat-flex-items .ppf_transparent {
+      width: 100%;
+      margin: 0 0 15px 0;
+      background-size: cover; }
+
 /*# sourceMappingURL=style.css.map */
