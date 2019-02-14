@@ -70,6 +70,18 @@ table {
     table button:hover {
       color: rgba(165, 165, 165, 0.6); }
 
+footer {
+  width: 100%;
+  max-width: 945px;
+  margin: 30px auto;
+  text-align: right; }
+  footer li {
+    display: inline-block;
+    padding: 3px 10px; }
+  footer a {
+    color: #fff;
+    text-decoration: none; }
+
 .categories {
   display: flex;
   flex-flow: row wrap;
