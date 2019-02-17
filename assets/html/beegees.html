@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bee Gees</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/powered.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62307007-19"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-62307007-19', { 'anonymize_ip': true }); 
+    </script>
+
+</head>
+
+<body>
+    <main>
+        <input type="text" id="filter-input" placeholder="Enter an artist ...">
+        <label>Filter: </label>
+
+        <h1>Songs of the Bee Gees</h1>
+
+        <table>
+            <colgroup>
+                <col width="50">
+                <col width="100">
+                <col width="35">
+                <col width="290">
+                <col width="235">
+                <col width="150">
+                <col width="95">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th colspan="2" onclick="sortTable(3)">name&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                    <th onclick="sortTable(4)">artist&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                    <th onclick="sortTable(5)">release date&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                    <th onclick="sortTable(6)">price&nbsp;&nbsp;<i class="fas fa-caret-down"></i></th>
+                </tr>
+            </thead>
+            <tbody class="tracklist"></tbody>
+        </table>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://hotpink.eu/impressum">Impressum</a></li>
+            <li><a href="https://hotpink.eu/datenschutzerklaerung">Datenschutzerklärung</a></li>
+            <li><a href="https://github.com/peter-stuhlmann"><i class="fab fa-github">&nbsp;</i>Github</a></li>
+            <li><a href="https://hotpink.eu/">Hotpink</a></li>
+        </ul>
+    </footer>
+    <script src="./assets/js/music-beegees.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
