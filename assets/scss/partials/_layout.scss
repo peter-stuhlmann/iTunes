@@ -10,6 +10,16 @@ main {
     margin: 30px auto
 }
 
+a {
+    color: $secondaryColor;
+    text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.7
+    }
+}
+
 h1 {
     font-size: 2.8em;
     font-weight: 100;
