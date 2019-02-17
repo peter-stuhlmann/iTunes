@@ -30,6 +30,9 @@ const renderTracks = (filterValue) => {
         if (trackPrice == `-1`) {
             trackPrice = "Album only"
             currency = ""
+        } else if (trackPrice == `0`) {
+            trackPrice = "free"
+            currency = ""
         }
 
         const releaseDate = track.releaseDate.slice(0, 10)
