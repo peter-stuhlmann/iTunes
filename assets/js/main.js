@@ -18,10 +18,20 @@ const renderTracks = (filterValue) => {
         const preview = track.previewUrl
         const artworkUrl30 = track.artworkUrl30
         const collectionName = track.collectionName
-        const trackName = track.trackName
+
+        let trackNameExcerpt = track.trackName.slice(0, 45)
+        let trackNameOverTheLimit = track.trackName.slice(45)
+
+        if (trackNameOverTheLimit != ``) {
+            trackNameOverTheLimit = " ..."
+        } else {
+            trackNameOverTheLimit = ""
+        }
+
+        const trackName = trackNameExcerpt + trackNameOverTheLimit
 
         let artistNameExcerpt = track.artistName.slice(0, 45)
-        let artistNameOverTheLimit = track.artistName.slice(45, 10000)
+        let artistNameOverTheLimit = track.artistName.slice(45)
 
         if (artistNameOverTheLimit != ``) {
             artistNameOverTheLimit = " ..."
