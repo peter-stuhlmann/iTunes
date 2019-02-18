@@ -1,5 +1,10 @@
 # The Sound of Silence 
 
+**DEMO**: [https://hotpink.eu/silence](https://hotpink.eu/silence "hotpink.eu/silence")
+---
+
+---
+
 Create based on the data in music.js (already accessible through the `music` `const`) a preview page for this search result.
 
 For each entry you should show:
