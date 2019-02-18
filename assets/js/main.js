@@ -56,6 +56,7 @@ const renderTracks = (filterValue) => {
             currency = ""
         }
 
+        const trackViewUrl = track.trackViewUrl
         const releaseDate = track.releaseDate.slice(0, 10)
 
         return `
@@ -70,7 +71,7 @@ const renderTracks = (filterValue) => {
         <td>${trackName}</td>
         <td>${artistName}</td>
         <td class="nowrap">${releaseDate}</td>
-        <td>${trackPrice}&nbsp;${currency}</td>
+        <td><a title="Redirect to iTunes" target="_blanc" href="${trackViewUrl}">${trackPrice}&nbsp;${currency}</a></td>
       </tr>`
     })
 
