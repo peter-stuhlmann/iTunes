@@ -16,12 +16,13 @@ const renderTracks = (filterValue) => {
     const trackList = arrayTracks.map(track => {
         const index = arrayTracks.indexOf(track) + 1
         const preview = track.previewUrl
-        const artworkUrl30 = track.artworkUrl30
+        const artworkUrl30 = track.artworkUrl30 || 'https://via.placeholder.com/30'
         const collectionName = track.collectionName
 
         let trackName = track.trackName
 
         if (trackName != undefined) {
+            
             let trackNameExcerpt = track.trackName.slice(0, 45)
             let trackNameOverTheLimit = track.trackName.slice(45);
 
@@ -32,6 +33,8 @@ const renderTracks = (filterValue) => {
             }
 
             trackName = trackNameExcerpt + trackNameOverTheLimit
+        } else {
+            trackName = "blabalbalka"
         }
 
         let artistName = track.artistName
@@ -63,8 +66,10 @@ const renderTracks = (filterValue) => {
             trackPrice = "free"
             currency = ""
         }
+        
+        
 
-        const trackViewUrl = track.trackViewUrl
+        const trackViewUrl = track.trackViewUrl 
         const releaseDate = track.releaseDate.slice(0, 10)
 
         return `
