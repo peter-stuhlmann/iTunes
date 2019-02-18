@@ -22,8 +22,8 @@ const renderTracks = (filterValue) => {
         let trackName = track.trackName
 
         if (trackName != undefined) {
-            let trackNameExcerpt = track.trackName.slice(0, 5)
-            let trackNameOverTheLimit = track.trackName.slice(5);
+            let trackNameExcerpt = track.trackName.slice(0, 45)
+            let trackNameOverTheLimit = track.trackName.slice(45);
 
             if (trackNameOverTheLimit != ``) {
                 trackNameOverTheLimit = " ..."
