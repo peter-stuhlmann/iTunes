@@ -142,6 +142,7 @@ function heading(filterValue) {
         document.querySelector("#bestsellers").style.display = "none"
     } else {
         document.querySelector("#searchResults").style.display = "none"
+        document.querySelector("#bestsellers").style.display = "block"
     }
 }
 heading()
