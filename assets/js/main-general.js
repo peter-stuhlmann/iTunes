@@ -137,6 +137,13 @@ function heading(filterValue) {
 
     let h1 = `${heading}`
     document.querySelector("#heading").innerHTML = h1
+
+    if (heading != "Songs") {
+        document.querySelector("#searchResults").style.display = "block"
+        document.querySelector("#bestsellers").style.display = "none"
+    } else {
+        document.querySelector("#searchResults").style.display = "none"
+    }
 }
 heading()
 
