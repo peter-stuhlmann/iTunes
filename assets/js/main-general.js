@@ -72,8 +72,8 @@ const renderTracks = (filterValue) => {
             const trackViewUrl = track.trackViewUrl
             const releaseDate = track.releaseDate.slice(0, 10)
 
-//            if (artworkUrl30 || trackName || artistName || releaseDate || trackPrice || currency != undefined) {
-                return `
+            //            if (artworkUrl30 || trackName || artistName || releaseDate || trackPrice || currency != undefined) {
+            return `
       <tr>
         <td>${index}</td>
         <td>
@@ -87,7 +87,7 @@ const renderTracks = (filterValue) => {
         <td class="nowrap">${releaseDate}</td>
         <td><a title="Redirect to iTunes" target="_blanc" href="${trackViewUrl}">${trackPrice}&nbsp;${currency}</a></td>
       </tr>`
-//            }
+            //            }
         })
         document.querySelector('.tracklist').innerHTML = trackList.join("")
     }
@@ -127,7 +127,22 @@ let filterInput = document.querySelector("#filter-input")
 
 filterInput.onkeyup = function (e) {
     renderTracks(filterInput.value)
+    heading(filterInput.value)
 }
+
+
+// Heading h1 is the filterValue
+function heading(filterValue) {
+    let heading = filterValue
+    
+    if (heading == undefined) {
+        heading = "Songs"
+    }
+    
+    let h1 = `${heading}`
+    document.querySelector("#heading").innerHTML = h1
+}
+heading()
 
 
 // sort table (found at https://codepen.io/andrese52/pen/ZJENqp)
