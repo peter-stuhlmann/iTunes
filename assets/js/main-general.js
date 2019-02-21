@@ -133,12 +133,8 @@ filterInput.onkeyup = function (e) {
 
 // Heading h1 is the filterValue
 function heading(filterValue) {
-    let heading = filterValue
-    
-    if (heading == undefined) {
-        heading = "Songs"
-    }
-    
+    let heading = filterValue || "Songs"
+
     let h1 = `${heading}`
     document.querySelector("#heading").innerHTML = h1
 }
