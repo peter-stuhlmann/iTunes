@@ -64,6 +64,9 @@ const renderTracks = (filterValue) => {
             } else if (trackPrice == `0`) {
                 trackPrice = "free"
                 currency = ""
+            } else if (trackPrice == undefined) {
+                trackPrice = "???"
+                currency = ""
             }
 
             const trackViewUrl = track.trackViewUrl
