@@ -133,12 +133,11 @@ filterInput.onkeyup = function (e) {
 
 // Heading h1 is the filterValue
 function heading(filterValue) {
-    let heading = filterValue || "Songs"
+    let heading = filterValue || `Search`
 
-    let h1 = `${heading}`
-    document.querySelector("#heading").innerHTML = h1
+    document.querySelector("#heading").innerHTML = heading
 
-    if (heading != "Songs") {
+    if (heading != "Search") {
         document.querySelector("#searchResults").style.display = "block"
         document.querySelector("#bestsellers").style.display = "none"
     } else {
