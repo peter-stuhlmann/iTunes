@@ -1,7 +1,7 @@
 const renderTracks = (filterValue) => {
     let arrayTracks = null
 
-    const url = `https://itunes.apple.com/search?term=${filterValue || ""}&limit=20`
+    const url = `https://dci-fbw12-search-itunes.now.sh/?term=${filterValue || ""}&limit=20`
     const req = new XMLHttpRequest()
     req.open("GET", url, true)
     req.responseType = "json"
