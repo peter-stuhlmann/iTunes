@@ -72,7 +72,7 @@ const renderTracks = (filterValue) => {
             const trackViewUrl = track.trackViewUrl
             const releaseDate = track.releaseDate.slice(0, 10)
 
-            if (artworkUrl30 || trackName || artistName || releaseDate || trackPrice || currency != undefined) {
+//            if (artworkUrl30 || trackName || artistName || releaseDate || trackPrice || currency != undefined) {
                 return `
       <tr>
         <td>${index}</td>
@@ -87,7 +87,7 @@ const renderTracks = (filterValue) => {
         <td class="nowrap">${releaseDate}</td>
         <td><a title="Redirect to iTunes" target="_blanc" href="${trackViewUrl}">${trackPrice}&nbsp;${currency}</a></td>
       </tr>`
-            }
+//            }
         })
         document.querySelector('.tracklist').innerHTML = trackList.join("")
     }
